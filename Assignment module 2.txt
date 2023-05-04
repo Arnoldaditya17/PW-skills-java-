@@ -1,0 +1,21 @@
+Answer1) Git is a distrubuted version control system that tracks changes in any set of computer files ususally used for ccordinating works
+among programmers colloboratively developing source  code during software development its goal include speed dataa integrity and support for distributed non linerwork flow.
+
+
+
+Answer2)the term version control system is knows as source control is the practice of tracking and managing changes to software code.
+
+
+Answer3)github is a internet hosting service for software  development amnd version control using git.
+
+
+Answer4)some the git hosting services are gitlab, bitbucket,bucketetc
+
+Answer5)Local version control system,centralized version control system,distributed version control system.
+
+Answer6)One of the biggest advantages of Git is its branching capabilities. Unlike centralized version control systems, Git branches are cheap and easy to merge. This facilitates the feature branch workflow popular with many Git users. Feature branches provide an isolated environment for every change to your codebase.
+
+
+Answer7)Its a type of folder where we store our file or data there are two or more type of git repositories like for local commtis local one and a server based git repo.for combine works where we can commonly commits our file according to need.
+
+Answer8)you can initialize the git repo. through init command in git cmd .
