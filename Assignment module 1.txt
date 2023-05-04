@@ -1,0 +1,25 @@
+Answer1)computer is an electronic device that accepts information in form of digital data and manipulates it for some result based on program software and how the data is to be processed.
+
+
+
+
+
+Answer2)Ram called (random access memory) is a primary memory device used in computer it is made up of semiconductors which make it super fast and it is directely connected to our processor.it stores the file or instruction which is to be processed in the cpu.
+
+
+
+Answer3) data is stored in hdd or ssd which are secondary storage devices.
+
+
+
+Answer4) keyboard is the input device used to type text and numbers on the screen.
+
+
+Answer5)mouse is the input device which is used to move the cursor o pointer on the screen.
+
+
+Answer6) Machine language is directly understood by the computer without a translation program.
+
+
+
+Answer7)Input devices are the devices which  are used to give instruction or input to the computer like mouse and the keyboard are some comman input devices.
