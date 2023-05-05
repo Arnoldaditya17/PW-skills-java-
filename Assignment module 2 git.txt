@@ -1,0 +1,26 @@
+Answer1) you can simply type the command git version/git --version both will give you same output.
+
+
+Answer2) just go into the repository which you want to initialize and type command git init.
+
+
+Answer3) first check the git for your name and email is it present over there for that type commad  git config --list.
+
+
+after that if no user name and email is present there type command git config --global user.name "xyz"
+
+similarly for email type git config --global user.email "xyz@gmail.com" in this way you can tell git about your name and email.
+
+
+Answer4)To add the file to the staging area type the command git add followed by file name.
+
+Answer5)to remove the file from staging area type command git rm --cached followed by file name.
+
+Answer6) for commit type a command git commit -m "first commit /or which you want to add"
+
+Answer7)to send type command git branch -M main
+git remote add origin (url of git repo.)
+git push -u origin main
+
+
+Answer8)clone means to copy the data or project  from the main repository to the repo.wjere you want to clone and pull means commit the changes you made in the repository to your local repository.
