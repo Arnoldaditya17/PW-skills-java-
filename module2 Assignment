@@ -1,1 +1,116 @@
+(Answer1) 
+ Conditional operators are  logical operations to make decisions based on some conditions.
+The conditional operators in java are
+
+(1)Equality operators(==) -It is used to compare whether the values are the same or not.
+
+(2)Unequality operators (!=)-It is used to check both the values are unequal.
+
+(3)Greater than operator(>) -It is used to check that the value at the left is greater than the right or 
+not.
+
+(4)Less than operator(<)-It is used to check that the left is smaller than the right or not.
+
+(5)Greater than equal to operator(>=)-It  is used to check whether the value at left  is greater or equal to the value at the right .
+
+(6)Less than equal to operator(<=)-It is used to check whether the value at the left is smaller and equal to right or not. 
+
+
+
+
+
+
+(Answer2)
+On the basic of operand the operator are classified into 3 parts:-
+(1)Unary operators.
+(2)Binary operators.
+(3)ternary operators.
+
+
+
+
+
+
+
+
+(Answer3)
+The use of switch cases is to run the sequence of cases based on the user's choice like from this we can run a particular piece of code when we want.
+
+
+
+
+
+
+(Answer4)The parentheses have the highest priority; they execute first after that  unary operators like unary minus(-) and unary(+) then multiplication division and modulus and after that addition and subtraction both of them have the same precedence.
+
+
+
+
+
+(Answer5)Conditional statements are the control statement which control the flow of execution based on the certain condition 
+These are the conditional statement in java:-
+IF
+IF-ELSE
+NESTED IF-ELSE
+SWITCH 
+
+
+
+
+(Answer6)The Syntax of IF and ELSE statement is ➖
+if(condition)
+{
+
+
+//code;
+}
+
+Else
+{
+//code;
+
+}
+
+
+
+
+(Answer7)
+The three type of iterative statement are ➖
+While
+Do-while
+for
+
+
+
+
+
+
+(Answer8)
+The difference between for and the do-while is first of all in the do-while whether the condition is false or true it will execute the code once .
+
+In the for loop no.of iterations are known.
+
+It will not run the code once before checking the condition.
+
+
+
+
+
+(Answer9)The code for printing 1-10 is ➖
+
+
+public class Number{
+
+public static void main(String []arg)
+{
+
+ for (int i=1;i<=10;i++)
+{
+System.out.println(i);
+}
+
+
+}
+
+}
 
