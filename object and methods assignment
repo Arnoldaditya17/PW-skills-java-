@@ -1,0 +1,26 @@
+(1).To create an object first you need a blueprint for which you will create an object that blueprint is called class then you have to use a new keyword to allocate the memory of the object in the memory.
+
+            Syntax:- class name obj= new class name();
+
+
+(2).The new keyword is used to instantiate the class and allocate the memory  for an object
+
+
+(3).There are three types of variable in java:-
+                Local variable,instance variables and static variable
+                
+                
+(4).An instance variable is a variable which is created outside the method but inside the class.where as the local variable is created inside the method.
+
+An instance variable is created in the heap memory as it is the part of an object.
+Whereas a local variable is created inside the stack memory.
+
+An instance variable has some default values like int have 0 and string have null with it whereas local variables have no default values.
+
+
+(5)Instance variable is created in heap
+Local is created in stack
+
+
+(6).Method overloading is a concept in which we can create many methods with the same name in the same method by changing the number of parameters and data types of the parameters.
+
