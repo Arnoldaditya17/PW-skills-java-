@@ -1,0 +1,35 @@
+(1)For different data types the default values of array is ➖
+For integers it is 0.
+For float it is 0.0.
+For String it is null.
+For booleans it is false.
+For object arrays it is null. 
+
+
+   (2)Size of an array represents  no. of elements entered in an array but it is not possible to enter the negative no . as a size in an array.
+
+(3) Arrays in java are objects so they are stored in heap memory.
+
+
+(4) (a) The disadvantages of arrays are once you create an array you can decrease or increase its size.
+(b) all the elements in the arrays are homogeneous.
+
+
+
+(5) an anonymous array is an array which is created without explicitly assigning  to  the variable it is instantiated without
+Providing the name of the array.
+
+(6) In java there are many ways to traverse an array. In java some of them are traditional for loop.
+Enhance for loop,while loop and do-while loop.
+
+(7)length is a property of arrays whereas length() is a method of string.
+
+Example:-
+int[] arr = {1, 2, 3, 4, 5};
+int size = arr.length; // Returns the length of the array, which is 5.
+
+
+String str = "Hello, World!";
+int size = str.length(); // Returns the length of the string, which is 13.
+
+
