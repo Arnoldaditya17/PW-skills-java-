@@ -1,0 +1,113 @@
+
+
+Question 1.
+public class MethodOverloadingExample {
+
+   
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+
+    public String concatenate(String str1, String str2, String str3) {
+        return str1 + str2 + str3;
+    }
+
+    public static void main(String[] args) {
+        MethodOverloadingExample example = new MethodOverloadingExample();
+
+        int sum1 = example.add(5, 10);
+        int sum2 = example.add(2, 4, 6);
+
+        System.out.println("Sum of two integers: " + sum1);
+        System.out.println("Sum of three integers: " + sum2);
+
+        String result = example.concatenate("Hello", ", ", "World!");
+        System.out.println("Concatenated string: " + result);
+    }
+}
+
+Question 2.
+public class MyClass {
+
+
+    public void displayMessage() {
+        System.out.println("Hello, from the displayMessage method!");
+    }
+
+    public static void main(String[] args) {
+    
+        MyClass myObject = new MyClass();
+
+   
+        myObject.displayMessage();
+    }
+}
+
+
+Question 3.
+class HelloWorld {
+    public static void main(String[] args) {
+        int arr[]={5,7,8,9,1};
+        int add=0;
+        for(int i=0;i<5;i++)
+        {
+             add=add+arr[i];
+        }
+        System.out.println(add);
+    }
+}
+
+Question 4.
+import java.util.Scanner;
+
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int arr[] = { 5, 6, 3, 1, 9 };
+        for (int i = 0; i < 5; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        int position;
+        System.out.println("Enter element to search:");
+        position = input.nextInt();
+
+        int index = -1; // To store the position of the element
+        for (int j = 0; j < 5; j++) {
+            if (position == arr[j]) {
+                index = j;
+                break;
+            }
+        }
+
+        if (index != -1) {
+            System.out.println("Element found at index: " + index);
+        } else {
+            System.out.println("Element not found in the array.");
+        }
+    }
+}
+
+
+question 5.
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int arr[]={5,7,8,9,1};
+  
+        for(int i=0;i<5;i++)
+        {
+             System.out.println(arr[i]);
+        }
+       
+    }
+}
+
