@@ -1,11 +1,11 @@
-Compile-time Errors:
+Q(1) Compile-time Errors:
 These errors occur during the compilation of your Java program. They are also known as compilation errors or syntax errors because they are related to the syntax and structure of your code. Compile-time errors prevent the program from being successfully compiled and, therefore, cannot be executed until they are fixed. Common examples include missing semicolons, undeclared variables, and incorrect method or class definitions.
 Runtime Errors (Exceptions):
 Runtime errors, also known as exceptions, occur while a program is running. These errors are often caused by unexpected conditions or invalid operations during program execution. Java provides a mechanism for handling exceptions using try-catch blocks.
 Logical Errors (Bugs):
 Logical errors, also known as bugs, are the most challenging type of errors to detect and fix. These errors occur when your code does not produce the expected output or behaves incorrectly due to flawed logic or algorithmic mistakes. The program may run without any exceptions or compile-time errors, but the result is not as intended.
 
-(2)Here are some key points about exceptions in Java:
+Q(2) Here are some key points about exceptions in Java:
 Types of Exceptions: Exceptions in Java are represented as objects belonging to classes that inherit from the Throwable class. There are two main types of exceptions:
 Checked Exceptions: These are exceptions that the Java compiler forces you to handle explicitly using try-catch blocks or declare with a throws clause in the method signature. Checked exceptions typically represent recoverable errors, such as file not found or network connection issues.
 Unchecked Exceptions (Runtime Exceptions):
@@ -13,7 +13,7 @@ Unchecked exceptions, also known as runtime exceptions, do not need to be explic
 Handling Exceptions:
 To handle exceptions in Java, you can use try-catch blocks. The try block contains the code that may throw an exception, and the catch block contains code to handle the exception if it occurs.
 
-(3)In Java, you can handle exceptions using try-catch blocks. A try block contains the code that may throw an exception, and a catch block specifies how to handle that exception if it occurs
+Q(3) In Java, you can handle exceptions using try-catch blocks. A try block contains the code that may throw an exception, and a catch block specifies how to handle that exception if it occurs
 for example;--
 public class ExceptionHandlingExample {
 
@@ -35,7 +35,7 @@ Here's how the program works:
 (b) inside the try block, we call the divide method with the arguments 10 and 0. Since dividing by zero is not allowed, an ArithmeticException will be thrown.
 (c)fter handling the exception, the program continues executing the code outside the catch block. In this case, it prints "Program continues after exception handling."
 
-(4)Exception handling in Java is a crucial aspect of writing robust and reliable software. It allows you to gracefully handle unexpected or exceptional situations that can occur during the execution of a program. Here are some reasons why exceptional handling is necessary in Java:
+Q(4) Exception handling in Java is a crucial aspect of writing robust and reliable software. It allows you to gracefully handle unexpected or exceptional situations that can occur during the execution of a program. Here are some reasons why exceptional handling is necessary in Java:
 
 (a)Error Handling: Exception handling helps you deal with errors and exceptional conditions that may arise during program execution. These errors could be due to unexpected input, external factors, or system issues.
 (b)Graceful Recovery: Exception handling enables you to recover gracefully from exceptions rather than letting the program crash abruptly. This can enhance the user experience by providing informative error messages and allowing the program to continue functioning when possible.
@@ -44,7 +44,7 @@ Here's how the program works:
 (e)Business Logic: Exception handling allows you to define and manage business-specific exceptions, making it easier to handle domain-specific errors or conditions unique to your application.
 (f)Predictability: Handling exceptions provides a way to predict and manage potential errors, making your code more robust and predictable. Without proper exception handling, your program's behavior in exceptional situations may be unpredictable.
 
-(5)n Java, both exceptions and errors are types of Throwable objects, but they serve different purposes and have distinct characteristics:
+Q(5)IN Java, both exceptions and errors are types of Throwable objects, but they serve different purposes and have distinct characteristics:
 
 (A) Exceptions:
 
@@ -62,7 +62,7 @@ Common examples of errors in Java include java.lang.OutOfMemoryError, java.lang.
 
 In summary, exceptions are used to handle expected and recoverable issues in your Java code, while errors are used to represent unexpected and usually unrecoverable problems that are typically outside the control of your application
 
-(6)n Java, exceptions are categorized into two main types: checked exceptions and unchecked exceptions. Each of these categories has various subclasses representing specific types of exceptions. Here are some common types of exceptions in Java:
+Q(6) Java, exceptions are categorized into two main types: checked exceptions and unchecked exceptions. Each of these categories has various subclasses representing specific types of exceptions. Here are some common types of exceptions in Java:
 
 (a) Checked Exceptions:
 
@@ -76,7 +76,7 @@ Errors:
 (c) Errors represent severe and typically unrecoverable issues that are usually outside the control of your application. 
 It's important to understand these different types of exceptions in Java and handle them appropriately in your code. Checked exceptions should be handled or declared, while unchecked exceptions should be prevented through proper programming practices, and errors should be reported and addressed at the system level.
 
-(7) No, you cannot use just a try block without either a catch block or a finally block in Java. The try block is used to enclose code that may potentially throw exceptions, but you need either a catch block or a finally block (or both) to handle or clean up after those exceptions.
+Q(7) No, you cannot use just a try block without either a catch block or a finally block in Java. The try block is used to enclose code that may potentially throw exceptions, but you need either a catch block or a finally block (or both) to handle or clean up after those exceptions.
 Here's a brief explanation of each:
 (a) try: The try block is used to enclose the code that might throw exceptions. If an exception occurs within the try block, it is typically propagated to the nearest catch block for handling. If there is no catch block, the exception can be caught further up the call stack or may cause the program to terminate.
 
@@ -99,7 +99,7 @@ In this example, the try block contains code that can throw an ArithmeticExcepti
 
 ASSIGNMENT 2nd
 
-(1) In Java 8, lambda expressions were introduced as a new way to represent anonymous functions or methods. Lambda expressions provide a concise way to define implementations for functional interfaces (interfaces with a single abstract method) directly in your code.
+Q(1) In Java 8, lambda expressions were introduced as a new way to represent anonymous functions or methods. Lambda expressions provide a concise way to define implementations for functional interfaces (interfaces with a single abstract method) directly in your code.
 Here are some examples of lambda expressions in Java 8:
 * A lambda expression that takes no parameters and returns a constant value:
 () -> 42
@@ -110,14 +110,193 @@ Here are some examples of lambda expressions in Java 8:
 
 Lambda expressions are commonly used when working with functional interfaces like Runnable, Callable, and various interfaces in the Java Collections Framework, where you need to provide an implementation for a single abstract method. They make the code more concise and readable for certain use cases.
 
-(2) Yes, you can pass lambda expressions as arguments to methods in Java. This is a powerful feature introduced in Java 8 that allows you to write more flexible and expressive code. Lambda expressions can be passed as arguments when you want to:
+Q(2) Yes, you can pass lambda expressions as arguments to methods in Java. This is a powerful feature introduced in Java 8 that allows you to write more flexible and expressive code. Lambda expressions can be passed as arguments when you want to:
 
 Customize Behavior: You can pass different behaviors to a method by using lambda expressions as arguments. This is often used to customize how a method operates without the need to create multiple implementations of interfaces or classes.
 
 Implement Callbacks: Lambda expressions can be used to define callbacks that are executed by a method when specific events or conditions occur.
 
 Simplify Code: Lambda expressions can make your code more concise and readable, especially when you need to pass short, one-off pieces of logic to a method.
+for example:-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class LambdaExample {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+
+        
+        List<Integer> evenNumbers = filterList(numbers, (Integer n) -> n % 2 == 0);
+        System.out.println("Even numbers: " + evenNumbers);
+    }
+
+   
+    public static List<Integer> filterList(List<Integer> list, Predicate<Integer> condition) {
+        List<Integer> result = new ArrayList<>();
+        for (Integer item : list) {
+            if (condition.test(item)) {
+                result.add(item);
+            }
+        }
+        return result;
+    }
+}
+So, passing lambda expressions as method arguments is a powerful technique for making your code more flexible and expressive.
+
+
+Q(3) In Java 8, a functional interface is an interface that has exactly one abstract method. Functional interfaces are also known as Single Abstract Method (SAM) interfaces. These interfaces are designed to be used with lambda expressions or method references, making it easier to work with functional programming concepts in Java.
+
+The concept of functional interfaces is at the core of Java 8's introduction of lambda expressions and the Stream API, which provide more concise and expressive ways to work with functions and collections.
+Here are a few key points about functional interfaces in Java 8:
+
+(a) Single Abstract Method (SAM): A functional interface can have only one abstract method. However, it can have multiple default or static methods with implementations.
+
+(b) FunctionalInterface Annotation: While not strictly required, it's a good practice to annotate a functional interface with @FunctionalInterface. This annotation helps the compiler check that the interface meets the criteria of having only one abstract method.
+
+(c) Lambda Expressions: Functional interfaces are typically used with lambda expressions. You can provide an implementation for the single abstract method of the interface using a lambda expression.
+
+(d) Method References: Method references are another way to provide implementations for functional interfaces. They allow you to reference an existing method as the implementation of the abstract method.
 
 
 
 
+
+Q(4) Lambda expressions in Java are used for several purposes to improve code conciseness, readability, and expressiveness. Here are some of the primary reasons why lambda expressions are used in Java:
+
+(a) Conciseness: Lambda expressions allow you to write more compact code, especially when you need to define simple, one-off functions or behaviors. This leads to reduced boilerplate code.
+
+(b) Readability: Lambda expressions can make your code more readable by expressing the intent of an operation directly in the code. This can make it easier to understand the purpose of a function or method.
+
+(c) Functional Programming: Lambda expressions facilitate functional programming in Java by treating functions as first-class citizens. This enables you to pass functions as arguments, return them from other functions, and store them in data structures.
+
+(d) Stream API: Lambda expressions are often used in conjunction with the Stream API introduced in Java 8. This allows you to express complex data processing operations (filtering, mapping, reducing, etc.) in a more declarative and concise manner.
+
+(e) Improved API Design: Java's core libraries and frameworks have been updated to accept lambda expressions as arguments. This enables more flexible and expressive API designs.
+
+(f )Parallel and Asynchronous Programming: Lambda expressions are useful for parallel and asynchronous programming because they allow you to express tasks or operations that can be executed concurrently or asynchronously.
+
+(g) Event Handling: Lambda expressions are commonly used for event handling in graphical user interfaces (GUIs) and other applications. They provide a succinct way to define event handlers and callbacks.
+
+(h) Customization of Behavior: Lambda expressions can be used to pass behaviors as arguments to methods. This allows you to customize the behavior of a method without changing its core implementation.
+
+(i) Cleaner Code: By reducing the need for anonymous inner classes and repetitive code structures, lambda expressions help make your code cleaner and more maintainable.
+
+(j) Functional Interfaces: Lambda expressions are designed to work with functional interfaces, which represent single abstract methods. This design promotes a cleaner separation of concerns and encourages writing code that adheres to the single responsibility principle.
+
+Overall, lambda expressions in Java empower developers to write more expressive and functional code, leading to better code organization, maintainability, and adaptability to changing requirements. They are a valuable addition to the Java language, enabling more modern and efficient coding practices.
+
+
+Q(5) No, it is not mandatory for a lambda expression in Java to have parameters. Lambda expressions can be used without parameters when they are not needed for the specific behavior you want to define.
+The basic syntax of a lambda expression with and without parameters:
+
+(1) Lambda with parameters:
+(parameter_list) -> expression
+
+(2) Lambda without parameters:
+Runnable greet = () -> System.out.println("Hello, World!");
+
+The presence or absence of parameters in a lambda expression depends on the functional interface you are implementing. Functional interfaces define the shape of the lambda expression, including the number and types of parameters it can take. Some functional interfaces require parameters, while others do not.
+
+So, whether a lambda expression should have parameters or not depends on your specific programming task and the requirements of the functional interface or delegate type you are working with.
+
+
+
+
+
+
+
+ASSIGNMENT 3
+
+Q(1) In Java, an interface is a programming construct that defines a contract of methods that a class implementing the interface must provide. It specifies a set of method signatures without providing the method implementations. In other words, an interface defines what a class should do, but not how it should do it. It serves as a blueprint for implementing classes.
+
+Here are some key points about Java interfaces:
+
+(a) Method Signatures: Interfaces declare abstract methods (methods without a body) that implementing classes are required to define. These methods have no method body or implementation details in the interface itself.
+
+(b) Multiple Inheritance: Unlike classes, Java supports multiple inheritance through interfaces. A class can implement multiple interfaces, which allows it to inherit method signatures from multiple sources.
+
+(c) Abstract and Public: All methods declared in an interface are implicitly abstract and public. You don't need to use the abstract or public modifiers when declaring methods in an interface.
+
+(d) No Instance Variables: Interfaces cannot have instance variables (fields). They can only have constants (variables declared as static final) because they are implicitly public, static, and final.
+
+(e) Implements Keyword: To implement an interface, a class uses the implements keyword in its class declaration. The class must provide concrete implementations (method bodies) for all the methods declared in the interface.
+
+Q(2) In Java, methods declared in an interface have specific rules and restrictions regarding modifiers:
+
+(a) public: All methods declared in an interface are implicitly public. This means they can be accessed from any other class.
+
+(b) abstract: All methods declared in an interface are implicitly abstract. This means they have no method body; only method signatures are provided.
+
+(c) default (Java 8 and later): Starting with Java 8, you can also declare a method in an interface with the default modifier. A default method provides a default implementation that can be overridden by implementing classes. This feature was introduced to allow interfaces to evolve without breaking existing implementing classes.
+ example illustrating these modifiers in an interface:
+
+interface MyInterface {
+    void abstractMethod(); 
+
+    default void defaultMethod() {
+        System.out.println("Default method in MyInterface");
+    }
+    
+    static void staticMethod() {
+        System.out.println("Static method in MyInterface");
+    }
+}
+abstractMethod() is an abstract method declared in the MyInterface interface. It is implicitly public and abstract. Any class implementing this interface must provide an implementation for this method.
+
+defaultMethod() is a default method introduced in Java 8. It provides a default implementation within the interface. Implementing classes have the option to override this method, but they are not required to do so.
+
+
+Q(3) In Java, interfaces serve several important purposes, and they are used for various reasons, including:
+
+(a) Abstraction: Interfaces allow you to define a contract of methods that a class must implement without specifying the implementation details. This abstraction helps in creating a clear separation between the "what" (the interface) and the "how" (the implementing class). By using interfaces, you define what a class should do, but not how it should do it.
+
+(b) Multiple Inheritance: Java supports multiple inheritance of interfaces. This means a class can implement multiple interfaces, inheriting the method signatures from each interface. This is particularly useful when a class needs to exhibit behavior from multiple sources, as Java doesn't support multiple inheritance of classes.
+
+(c) Polymorphism: Interfaces enable polymorphism. You can create references of an interface type and assign objects of classes that implement that interface to those references. This allows for flexibility in the choice of objects at runtime, promoting code that is more flexible and adaptable
+
+(d) Code Reusability: Interfaces promote code reusability because multiple classes can implement the same interface. This reduces duplication of code and follows the DRY (Don't Repeat Yourself) principle. If you have multiple classes that need to provide similar functionality, you can define an interface and have those classes implement it.
+
+(e) Framework and API Design: Interfaces are commonly used when designing frameworks and APIs. They provide a clear way for developers to extend and customize functionality by implementing predefined interfaces. This allows for the creation of pluggable components within an application or system.
+
+(f) Enforce Contracts: Interfaces allow you to define a contract that implementing classes must adhere to. This ensures that classes follow a certain set of rules or requirements, which can lead to more robust and predictable code.
+
+
+Q(4) In Java, both abstract classes and interfaces are used to achieve abstraction and define contracts for classes. However, there are some key differences between them:
+
+(A) Method Implementation:
+
+(1) Abstract Class: An abstract class can have both abstract (methods without a body) and concrete (methods with a body) methods. Abstract methods in an abstract class define a contract that derived (subclasses) classes must implement, but concrete methods provide default behavior that derived classes can override.
+
+(2) Interface: Interfaces can only have abstract methods (methods without a body) and constants (public static final fields). All methods declared in an interface are implicitly abstract and public. In Java 8 and later, interfaces can also have default methods (methods with a default implementation) and static methods (methods that belong to the interface, not to instances).
+
+(B) nheritance:
+
+(1) Abstract Class: A class can extend only one abstract class. Java supports single inheritance through classes. This means a class can inherit members (fields and methods) from one parent abstract class.
+
+(2) Interface: A class can implement multiple interfaces. Java supports multiple inheritance through interfaces. This means a class can inherit method signatures (contracts) from multiple interfaces. This is one of the primary motivations for using interfaces when a class needs to exhibit behavior from multiple sources.
+
+(C)Constructor:
+
+(1) Abstract Class: Abstract classes can have constructors, and these constructors are called when an instance of a derived class is created. Abstract classes are often used to provide a common base for derived classes.
+
+(2) Interface: Interfaces cannot have constructors. They are purely a contract for the methods that implementing classes must provide.
+
+(D) Fields (Variables):
+
+(1) Abstract Class: Abstract classes can have fields (instance variables), just like regular classes. These fields can have different access modifiers (public, private, protected, package-private) and can hold state.
+
+(2) Interface: Interfaces can only have constants (public static final fields), which are implicitly public, static, and final. These fields are meant for defining constants and not for holding instance-specific state.
+
+(E) Usage:
+
+(1) Abstract Class: Abstract classes are typically used when you want to provide a common base with some default behavior and leave room for customization in derived classes. They are a good choice when you have a "is-a" relationship between the base class and its subclasses.
+
+(2) Interface: Interfaces are used when you want to define a contract that multiple unrelated classes can implement. They are suitable for achieving polymorphism through interface references and for allowing classes to adhere to multiple contracts.
+
+ THE choice between using an abstract class or an interface in Java depends on the specific requirements of your design. If you need to provide common functionality with some default behavior, consider an abstract class. If you want to define a contract that multiple classes can implement, use an interface. You can also use a combination of both abstract classes and interfaces in your design when needed.
